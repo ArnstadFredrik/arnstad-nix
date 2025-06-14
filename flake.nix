@@ -96,11 +96,15 @@
         finder.NewWindowTarget = "Home";
         finder.ShowPathbar = true;
         loginwindow.GuestEnabled = false;
+        loginwindow.LoginwindowText = "Fred være med dere";
         screencapture.location = "~/Pictures/skjermbilder";
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
       };
+
+      system.keyboard.enableKeyMapping = true;
+      system.keyboard.remapCapsLockToEscape = true;
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
