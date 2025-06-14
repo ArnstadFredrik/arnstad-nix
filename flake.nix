@@ -94,7 +94,7 @@
         finder.AppleShowAllExtensions = true;
         finder.FXRemoveOldTrashItems = true;
         finder.NewWindowTarget = "Home";
-        finder.showPathbar = true;
+        finder.ShowPathbar = true;
         loginwindow.GuestEnabled = false;
         screencapture.location = "~/Pictures/skjermbilder";
         NSGlobalDomain.AppleICUForce24HourTime = true;
