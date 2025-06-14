@@ -79,6 +79,9 @@
       system.defaults = {
         dock.autohide = true;
         dock.orientation = "left";
+        dock.mru-spaces = false;
+        dock.autohide-time-modifier = 0.0;
+        dock.autohide-delay = 0.0;
         dock.persistent-apps = [
         "/Applications/Brave Browser.app"
         "/System/Applications/Mail.app"
@@ -88,7 +91,12 @@
         "/System/Applications/Calendar.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
+        finder.AppleShowAllExtensions = true;
+        finder.FXRemoveOldTrashItems = true;
+        finder.NewWindowTarget = "Home";
+        finder.showPathbar = true;
         loginwindow.GuestEnabled = false;
+        screencapture.location = "~/Pictures/skjermbilder";
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
@@ -103,6 +111,7 @@
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "x86_64-darwin";
+      #nixpkgs.hostPlatform = "aarch64-darwin";
     };
   in
   {
